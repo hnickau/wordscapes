@@ -4,16 +4,35 @@ import (
   "fmt"
   "os"
 	"os/exec"
+	"io/ioutil"
 	"runtime"
   "strings"
   "strconv"
   "log"
-  "io"
+  "sort"
+//  "io"
 )
 
+type byLength []string
+// We implement `sort.Interface` - `Len`, `Less`, and
+// `Swap` - on our type so we can use the `sort` package's
+// generic `Sort` function. 
+func (s byLength) Len() int {
+  return len(s)
+}
+func (s byLength) Swap(i, j int) {
+  s[i], s[j] = s[j], s[i]
+}
+func (s byLength) Less(i, j int) bool {
+  if len(s[i]) == len(s[j]) {
+    return s[i] < s[j]
+  } 
+  return len(s[i]) < len(s[j]) 
+}
+
+
+
 func main() {
-  args := make([] string, 1)
-  stdins := make([] io.WriteCloser, 1)
   cs := make(map[string]int)
   letters := strings.Split(os.Args[1],"")
   minw := 3
@@ -27,28 +46,60 @@ func main() {
   for _,l := range letters {
     cs[l] = cs[l] + 1
   }
-  fmt.Println(cs)
-  args[0] = "^[" 
-  for l, c := range cs {
-    args[0] += l
-    c = c
+//  fmt.Println(cs)
+  args := "^[" 
+  for l, _ := range cs {
+    args += l
   }
-  args[0] = fmt.Sprintf("%s]\\{%d,%d\\}$",args[0],minw,maxw)
-  //args[0] = "hello"
-  fmt.Println(args[0])
+  args = fmt.Sprintf("%s]\\{%d,%d\\}$",args,minw,maxw)
   wordsdir := "/users/nickau/local/"
   if runtime.GOOS == "darwin" {
     wordsdir = "/Users/nickau/local/" 
   }
-	cmd := exec.Command("grep", args[0], wordsdir+"words")
-  cmd.Stdout = os.Stdout
+	cmd := exec.Command("grep", args, wordsdir+"words")
+	
+  stdout, err := cmd.StdoutPipe()
+	if err != nil {
+		log.Fatal(err)
+	}
 	cmd.Stderr = os.Stderr
-	fmt.Println(cmd)
+	if err := cmd.Start(); err != nil {
+		log.Fatal(err)
+	}
 
-	err := cmd.Run()
-	if false { //err != nil {
-		log.Fatalf("cmd.Run() failed with %s\n", err)
-	}  
+  results, _ := ioutil.ReadAll(stdout)
+  cmd.Wait()
+
+  for l, c := range cs {
+    regex := l
+    for c > 0 {
+      regex += ".*" + l
+      c = c - 1
+    } 
+    cmd = exec.Command("grep", "-v", regex)
+    stdout, err := cmd.StdoutPipe()
+    if err != nil {
+	    log.Fatal(err)
+    }
+    stdin, err := cmd.StdinPipe()
+    if err != nil {
+	    log.Fatal(err)
+    }
+	  if err := cmd.Start(); err != nil {
+		  log.Fatal(err)
+	  }
+    
+    fmt.Fprintf(stdin, "%s", string(results)) 
+    stdin.Close()
+    
+    results, _ = ioutil.ReadAll(stdout)
+    cmd.Wait()
+  }
+    
+  lines := strings.Split(string(results), "\n")
+  sort.Sort(byLength(lines))
+  result := strings.Join(lines,"\n")
+  fmt.Println(result)
 }
 
 
