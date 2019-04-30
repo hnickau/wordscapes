@@ -103,7 +103,7 @@ abducts
 abeam
 abecedarian
 abecedarians
-abed
+abed*
 aberdeen
 aberrance
 aberrancies
@@ -860,7 +860,7 @@ acknowledges
 acknowledging
 acknowledgment
 acknowledgments
-aclu
+aclu*
 acme
 acmes
 acne
@@ -2203,7 +2203,7 @@ alaskans
 alaskas
 alate
 alated
-alb
+alb*
 alba
 albacore
 albacores
@@ -2380,7 +2380,7 @@ aligning
 alignment
 alignments
 aligns
-alii
+alii*
 alike
 alikeness
 aliment
@@ -2402,7 +2402,7 @@ aliphatic
 aliquant
 aliquot
 aliquots
-alit
+alit*
 aliter
 alive
 aliveness
@@ -6060,7 +6060,7 @@ aureoled
 aureoles
 aureomycin
 aureus
-auric
+auric*
 auricle
 auricled
 auricles
@@ -6559,7 +6559,7 @@ babbling
 babblings
 babcock
 babe
-babel
+babel*
 babels
 babes
 babied
@@ -7770,9 +7770,9 @@ bazar
 bazars
 bazooka
 bazookas
-bb
-bbl
-bdrm
+bb*
+bbl*
+bdrm*
 be
 beach
 beachboy
@@ -8290,7 +8290,7 @@ bejewelled
 bejewelling
 bejewels
 beknighted
-bel
+bel*
 belabor
 belabored
 belaboring
@@ -13044,7 +13044,7 @@ cakier
 cakiest
 caking
 caky
-cal
+cal*
 calabash
 calabashes
 calaboose
@@ -13063,7 +13063,7 @@ calamitous
 calamitously
 calamitousness
 calamity
-calc
+calc*
 calcareous
 calcareously
 calcareousness
@@ -14073,7 +14073,7 @@ carioca
 cariocas
 cariole
 carious
-carl
+carl*
 carless
 carlo
 carload
@@ -16568,7 +16568,7 @@ chyme
 chymics
 chymist
 chymists
-cia
+cia*
 ciao
 cicada
 cicadae
@@ -16658,7 +16658,7 @@ ciphered
 ciphering
 ciphers
 ciphonies
-circ
+circ*
 circa
 circadian
 circe
@@ -16889,7 +16889,7 @@ claimers
 claiming
 claimless
 claims
-clair
+clair*
 clairvoyance
 clairvoyances
 clairvoyancies
@@ -21733,7 +21733,7 @@ crazily
 craziness
 crazing
 crazy
-crc
+crc*
 creak
 creaked
 creakier
@@ -23626,7 +23626,7 @@ dazzles
 dazzling
 dazzlingly
 db
-dbl
+dbl*
 dbms
 dc
 de
@@ -24634,7 +24634,7 @@ dehydrogenation
 dehypnotize
 dehypnotized
 dehypnotizing
-dei
+dei*
 deice
 deiced
 deicer
@@ -25476,7 +25476,7 @@ deputized
 deputizes
 deputizing
 deputy
-der
+der*
 derail
 derailed
 derailing
@@ -31215,7 +31215,7 @@ empurpling
 empyreal
 empyrean
 empyreans
-ems
+ems*
 emu
 emulate
 emulated
@@ -46812,7 +46812,7 @@ ikons
 ileal
 ileitis
 ileum
-ilia
+ilia*
 iliad
 iliads
 ilium
@@ -52986,7 +52986,7 @@ laburnums
 labyrinth
 labyrinthine
 labyrinths
-lac
+lac*
 laccolith
 laccoliths
 lace
@@ -53080,7 +53080,7 @@ laddering
 ladders
 laddie
 laddies
-lade
+lade*
 laded
 laden
 ladened
@@ -53155,7 +53155,7 @@ laired
 lairing
 lairs
 laissez
-lait
+lait*
 laities
 laity
 lake
@@ -55069,7 +55069,7 @@ liquored
 liquorice
 liquoring
 liquors
-lira
+lira*
 liras
 lire
 lisbon
@@ -55952,7 +55952,7 @@ lucently
 lucern
 lucerne
 luces
-lucia
+lucia*
 lucid
 lucidities
 lucidity
@@ -58558,7 +58558,7 @@ mephistopheles
 mephitic
 mephitis
 meprobamate
-mer
+mer*
 mercantile
 mercantilism
 mercantilistic
@@ -61208,7 +61208,7 @@ mote
 motel
 motels
 motes
-motet
+motet*
 motets
 motey
 moth
@@ -61826,7 +61826,7 @@ musculoskeletal
 muse
 mused
 museful
-muser
+muser*
 musers
 muses
 musette
@@ -71104,7 +71104,7 @@ piscators
 pisces
 piscicide
 piscine
-pish
+pish*
 pished
 pishes
 pishing
@@ -74105,7 +74105,7 @@ primping
 primps
 primrose
 primroses
-prims
+prims*
 primulas
 primus
 primuses
@@ -80155,7 +80155,7 @@ remover
 removers
 removes
 removing
-rems
+rems*
 remunerate
 remunerated
 remunerates
@@ -81260,7 +81260,7 @@ resuscitation
 resuscitative
 resuscitator
 resuscitators
-ret
+ret*
 retail
 retailed
 retailer
@@ -81308,7 +81308,7 @@ retch
 retched
 retches
 retching
-retd
+retd*
 reteach
 reteaches
 reteaching
@@ -81978,7 +81978,7 @@ rhythmicities
 rhythmicity
 rhythmics
 rhythms
-rial
+rial*
 rials
 rialto
 rib
@@ -82386,7 +82386,7 @@ rivalries
 rivalry
 rivals
 rive*
-rived
+rived*
 rivederci
 riven
 river
@@ -83006,7 +83006,7 @@ royalties
 royalty
 roystered
 rpm
-rte
+rte*
 rub
 rubaiyat
 rubato
@@ -87977,7 +87977,7 @@ simonized
 simonizes
 simonizing
 simony
-simp
+simp*
 simpatico
 simper
 simpered
@@ -93980,7 +93980,7 @@ suede
 sueded
 suedes
 sueding
-suer
+suer*
 suers
 sues
 suet
@@ -95635,6 +95635,7 @@ tagger
 taggers
 tagging
 tags
+tahini
 tahiti
 tahitian
 tahitians
@@ -104105,8 +104106,8 @@ upwelled
 upwelling
 upwells
 upwind
-uracil
-ural
+uracil*
+ural*
 uranian
 uranic
 uranium
@@ -104405,7 +104406,7 @@ vagueness
 vaguer
 vaguest
 vagus
-vail
+vail*
 vailing
 vain
 vainer
@@ -105025,7 +105026,7 @@ verdancy
 verdant
 verdantly
 verde
-verdi
+verdi*
 verdict
 verdicts
 verdigris
@@ -105366,7 +105367,7 @@ victualling
 victuals
 vicuna
 vicunas
-vide
+vide*
 videlicet
 video
 videocassette
